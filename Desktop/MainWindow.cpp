@@ -60,7 +60,6 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::addNewFood() {
-    // TODO: reject duplicate food names
     Food food;
 
     // TODO: error checks to make sure the QString.toFloat() functions aren't operating on non-numeric characters
@@ -397,7 +396,10 @@ void MainWindow::addNewFood() {
         food.setZinc(0);
     }
 
-    mFoodModel->addFood(food);
+    if (!mFoodModel->addFood(food)) {
+        showInputError("Duplicate food names are not allowed");
+        return;
+    }
 
     QMessageBox box(this);
     box.setWindowTitle("Entry Successful");

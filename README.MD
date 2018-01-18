@@ -1,6 +1,6 @@
 <h2>Intake Tab</h2>
 
-Used to enter and measure daily intake. The top entry in the table is the totals of that day's intake. Changing the date will automatically load the associated date's intake. 
+Used to enter and measure daily intake. The top entry in the table is the total of that day's intake. Changing the date will automatically load the associated date's intake. 
 
 For the progress bars, calories is calculated automatically from macronutrient content, and saturated, trans, and unsaturated fats show the ratio of each type of fat that makes up the total fat intake.
 
@@ -11,7 +11,7 @@ Used to submit foods that can be entered in the Intake tab. The serving size is 
 
 This allows the user to enter a food label verbatim (in cases like bread where a serving size is measured by 2 slices) and have the program automatically calculate the nutritional value of a fractional or multiple serving.
 
-An important aspect of submitting a food item is in entering whether the micronutrient content is measured in absolute values (milligrams, micrograms, etc.), or, daily values (as defined by Health Canada). An absolute value of 30mg for Vitamin C will simple be stored as 30, whereas 25% of the daily recommended intake of Vitamin C will be calculated as (25 / 100) * 60 = 15mg, where 60 is the recommended daily value of Vitamin C.
+An important aspect of submitting a food item is in entering whether the micronutrient content is measured in absolute values (milligrams, micrograms, etc.), or, daily values (as defined by Health Canada). An absolute value of 30mg for Vitamin C will simply be stored as 30, whereas 25% of the daily recommended intake of Vitamin C will be calculated as (25 / 100) * 60 = 15mg, where 60 is the recommended daily value of Vitamin C.
 
 The Unit of Measure is just a reminder to the user what a serving size is measured in: slices, cups, each, etc., and is shown next to the food name in the Intake tab.
 

@@ -211,16 +211,16 @@ QVariant IntakeModel::headerData(int section, Qt::Orientation orientation, int r
             return "Calcium (mg)";
         }
         else if (section == 17) {
-            return "Chromium (mg)";
+            return "Chromium (ug)";
         }
         else if (section == 18) {
             return "Copper (mg)";
         }
         else if (section == 19) {
-            return "Folacin (mg)";
+            return "Folacin (ug)";
         }
         else if (section == 20) {
-            return "Iodide (mg)";
+            return "Iodide (ug)";
         }
         else if (section == 21) {
             return "Iron (mg)";
@@ -232,7 +232,7 @@ QVariant IntakeModel::headerData(int section, Qt::Orientation orientation, int r
             return "Manganese (mg)";
         }
         else if (section == 24) {
-            return "Molybdenum (mg)";
+            return "Molybdenum (ug)";
         }
         else if (section == 25) {
             return "Niacin (NE)";
@@ -250,7 +250,7 @@ QVariant IntakeModel::headerData(int section, Qt::Orientation orientation, int r
             return "Riboflavin (mg)";
         }
         else if (section == 30) {
-            return "Selenium (mg)";
+            return "Selenium (ug)";
         }
         else if (section == 31) {
             return "Thiamine (mg)";
@@ -262,13 +262,13 @@ QVariant IntakeModel::headerData(int section, Qt::Orientation orientation, int r
             return  "Vitamin B6 (mg)";
         }
         else if (section == 34) {
-            return "Vitamin B12 (mg)";
+            return "Vitamin B12 (ug)";
         }
         else if (section == 35) {
             return "Vitamin C (mg)";
         }
         else if (section == 36) {
-            return "Vitamin D (mg)";
+            return "Vitamin D (ug)";
         }
         else if (section == 37) {
             return "Vitamin E (mg)";

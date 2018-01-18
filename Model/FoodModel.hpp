@@ -11,7 +11,8 @@ class FoodModel : public QStringListModel {
     public:
         FoodModel();
 
-        void addFood(Food& food);
+        // returns true on success
+        bool addFood(Food& food);
 
         void getFoods(const QString& category);
 

@@ -204,16 +204,6 @@
               </sizepolicy>
              </property>
              <layout class="QGridLayout" name="gridLayout_8">
-              <item row="2" column="4">
-               <widget class="QProgressBar" name="carbsProgressBar">
-                <property name="value">
-                 <number>0</number>
-                </property>
-                <property name="format">
-                 <string>Carbs</string>
-                </property>
-               </widget>
-              </item>
               <item row="1" column="4">
                <widget class="QProgressBar" name="transProgressBar">
                 <property name="value">
@@ -224,7 +214,7 @@
                 </property>
                </widget>
               </item>
-              <item row="1" column="5">
+              <item row="1" column="6">
                <widget class="QProgressBar" name="unsaturatedProgressBar">
                 <property name="value">
                  <number>0</number>
@@ -314,7 +304,17 @@
                 </property>
                </widget>
               </item>
-              <item row="6" column="5">
+              <item row="2" column="1">
+               <widget class="QProgressBar" name="sodiumProgressBar">
+                <property name="value">
+                 <number>0</number>
+                </property>
+                <property name="format">
+                 <string>Sodium</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="6">
                <widget class="QProgressBar" name="iodideProgressBar">
                 <property name="value">
                  <number>0</number>
@@ -334,26 +334,6 @@
                 </property>
                </widget>
               </item>
-              <item row="2" column="1">
-               <widget class="QProgressBar" name="sodiumProgressBar">
-                <property name="value">
-                 <number>0</number>
-                </property>
-                <property name="format">
-                 <string>Sodium</string>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="5">
-               <widget class="QProgressBar" name="pantothenateProgressBar">
-                <property name="value">
-                 <number>0</number>
-                </property>
-                <property name="format">
-                 <string>Pantothenate</string>
-                </property>
-               </widget>
-              </item>
               <item row="9" column="4">
                <widget class="QProgressBar" name="vitaminEProgressBar">
                 <property name="value">
@@ -361,6 +341,16 @@
                 </property>
                 <property name="format">
                  <string notr="true">Vitamin E</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="6">
+               <widget class="QProgressBar" name="pantothenateProgressBar">
+                <property name="value">
+                 <number>0</number>
+                </property>
+                <property name="format">
+                 <string>Pantothenate</string>
                 </property>
                </widget>
               </item>
@@ -424,7 +414,7 @@
                 </property>
                </widget>
               </item>
-              <item row="8" column="5">
+              <item row="8" column="6">
                <widget class="QProgressBar" name="vitaminAProgressBar">
                 <property name="value">
                  <number>0</number>
@@ -444,33 +434,13 @@
                 </property>
                </widget>
               </item>
-              <item row="2" column="3">
-               <widget class="QProgressBar" name="fibreProgressBar">
-                <property name="value">
-                 <number>0</number>
-                </property>
-                <property name="format">
-                 <string>Fibre</string>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="5">
+              <item row="9" column="6">
                <widget class="QProgressBar" name="zincProgressBar">
                 <property name="value">
                  <number>0</number>
                 </property>
                 <property name="format">
                  <string>Zinc</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="spacerLabel_3">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string/>
                 </property>
                </widget>
               </item>
@@ -494,6 +464,16 @@
                 </property>
                </widget>
               </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="spacerLabel_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
               <item row="7" column="2">
                <widget class="QProgressBar" name="manganeseProgressBar">
                 <property name="value">
@@ -504,16 +484,6 @@
                 </property>
                </widget>
               </item>
-              <item row="1" column="0">
-               <widget class="QProgressBar" name="caloriesProgressBar">
-                <property name="value">
-                 <number>0</number>
-                </property>
-                <property name="format">
-                 <string>Calories</string>
-                </property>
-               </widget>
-              </item>
               <item row="8" column="0">
                <widget class="QProgressBar" name="phosphorousProgressBar">
                 <property name="value">
@@ -521,6 +491,16 @@
                 </property>
                 <property name="format">
                  <string>Phophorous</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QProgressBar" name="caloriesProgressBar">
+                <property name="value">
+                 <number>0</number>
+                </property>
+                <property name="format">
+                 <string>Calories</string>
                 </property>
                </widget>
               </item>
@@ -554,13 +534,33 @@
                 </property>
                </widget>
               </item>
-              <item row="2" column="5">
+              <item row="2" column="6">
                <widget class="QProgressBar" name="sugarProgressBar">
                 <property name="value">
                  <number>0</number>
                 </property>
                 <property name="format">
                  <string>Sugar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QProgressBar" name="carbsProgressBar">
+                <property name="value">
+                 <number>0</number>
+                </property>
+                <property name="format">
+                 <string>Carbs</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="4">
+               <widget class="QProgressBar" name="fibreProgressBar">
+                <property name="value">
+                 <number>0</number>
+                </property>
+                <property name="format">
+                 <string>Fibre</string>
                 </property>
                </widget>
               </item>
@@ -2651,7 +2651,7 @@
            <item row="0" column="0">
             <widget class="QLabel" name="fatTargetLabel">
              <property name="text">
-              <string>Fat:</string>
+              <string>Fat (g):</string>
              </property>
             </widget>
            </item>
@@ -2668,7 +2668,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="cholesterolTargetLabel">
              <property name="text">
-              <string>Cholesterol:</string>
+              <string>Cholesterol (mg):</string>
              </property>
             </widget>
            </item>
@@ -2685,7 +2685,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="sodiumTargetLabel">
              <property name="text">
-              <string>Sodium:</string>
+              <string>Sodium (mg):</string>
              </property>
             </widget>
            </item>
@@ -2702,7 +2702,7 @@
            <item row="3" column="0">
             <widget class="QLabel" name="carbsTargetLabel">
              <property name="text">
-              <string>Carbohydrates:</string>
+              <string>Carbohydrates (g):</string>
              </property>
             </widget>
            </item>
@@ -2719,7 +2719,7 @@
            <item row="4" column="0">
             <widget class="QLabel" name="fibreTargetLabel">
              <property name="text">
-              <string>Fibre:</string>
+              <string>Fibre (g):</string>
              </property>
             </widget>
            </item>
@@ -2736,7 +2736,7 @@
            <item row="5" column="0">
             <widget class="QLabel" name="sugarTargetLabel">
              <property name="text">
-              <string>Sugar:</string>
+              <string>Sugar (g):</string>
              </property>
             </widget>
            </item>
@@ -2753,7 +2753,7 @@
            <item row="6" column="0">
             <widget class="QLabel" name="proteinTargetLabel">
              <property name="text">
-              <string>Protein:</string>
+              <string>Protein (g):</string>
              </property>
             </widget>
            </item>
@@ -2770,7 +2770,7 @@
            <item row="7" column="0">
             <widget class="QLabel" name="biotinTargetLabel">
              <property name="text">
-              <string>Biotin:</string>
+              <string>Biotin (ug):</string>
              </property>
             </widget>
            </item>
@@ -2787,7 +2787,7 @@
            <item row="8" column="0">
             <widget class="QLabel" name="calciumTargetLabel">
              <property name="text">
-              <string>Calcium:</string>
+              <string>Calcium (mg):</string>
              </property>
             </widget>
            </item>
@@ -2804,7 +2804,7 @@
            <item row="9" column="0">
             <widget class="QLabel" name="chromiumTargetLabel">
              <property name="text">
-              <string>Chromium:</string>
+              <string>Chromium (ug):</string>
              </property>
             </widget>
            </item>
@@ -2821,7 +2821,7 @@
            <item row="10" column="0">
             <widget class="QLabel" name="copperTargetLabel">
              <property name="text">
-              <string>Copper:</string>
+              <string>Copper (mg):</string>
              </property>
             </widget>
            </item>
@@ -2838,7 +2838,7 @@
            <item row="11" column="0">
             <widget class="QLabel" name="folacinTargetLabel">
              <property name="text">
-              <string>Folacin:</string>
+              <string>Folacin (ug):</string>
              </property>
             </widget>
            </item>
@@ -2855,7 +2855,7 @@
            <item row="12" column="0">
             <widget class="QLabel" name="iodideTargetLabel">
              <property name="text">
-              <string>Iodide:</string>
+              <string>Iodide (ug):</string>
              </property>
             </widget>
            </item>
@@ -2872,7 +2872,7 @@
            <item row="13" column="0">
             <widget class="QLabel" name="ironTargetLabel">
              <property name="text">
-              <string>Iron:</string>
+              <string>Iron (mg):</string>
              </property>
             </widget>
            </item>
@@ -2889,7 +2889,7 @@
            <item row="14" column="0">
             <widget class="QLabel" name="magnesiumTargetLabel">
              <property name="text">
-              <string>Magnesium:</string>
+              <string>Magnesium (mg):</string>
              </property>
             </widget>
            </item>
@@ -2906,7 +2906,7 @@
            <item row="15" column="0">
             <widget class="QLabel" name="manganeseTargetLabel">
              <property name="text">
-              <string>Manganese:</string>
+              <string>Manganese (mg):</string>
              </property>
             </widget>
            </item>
@@ -2947,7 +2947,7 @@
            <item row="0" column="0">
             <widget class="QLabel" name="molybdenumTargetLabel">
              <property name="text">
-              <string>Molybdenum:</string>
+              <string>Molybdenum (ug):</string>
              </property>
             </widget>
            </item>
@@ -2964,7 +2964,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="niacinTargetLabel">
              <property name="text">
-              <string>Niacin:</string>
+              <string>Niacin (NE):</string>
              </property>
             </widget>
            </item>
@@ -2981,7 +2981,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="pantothenateTargetLabel">
              <property name="text">
-              <string>Pantothenate:</string>
+              <string>Pantothenate (mg):</string>
              </property>
             </widget>
            </item>
@@ -2998,7 +2998,7 @@
            <item row="3" column="0">
             <widget class="QLabel" name="phosphorousTargetLabel">
              <property name="text">
-              <string>Phosphorous:</string>
+              <string>Phosphorous (mg):</string>
              </property>
             </widget>
            </item>
@@ -3015,7 +3015,7 @@
            <item row="4" column="0">
             <widget class="QLabel" name="potassiumTargetLabel">
              <property name="text">
-              <string>Potassium:</string>
+              <string>Potassium (mg):</string>
              </property>
             </widget>
            </item>
@@ -3032,7 +3032,7 @@
            <item row="5" column="0">
             <widget class="QLabel" name="riboflavinTargetLabel">
              <property name="text">
-              <string>Riboflavin(B2):</string>
+              <string>Riboflavin(B2) (mg):</string>
              </property>
             </widget>
            </item>
@@ -3049,7 +3049,7 @@
            <item row="6" column="0">
             <widget class="QLabel" name="seleniumTargetLabel">
              <property name="text">
-              <string>Selenium:</string>
+              <string>Selenium (ug):</string>
              </property>
             </widget>
            </item>
@@ -3066,7 +3066,7 @@
            <item row="7" column="0">
             <widget class="QLabel" name="thiamineTargetLabel">
              <property name="text">
-              <string>Thiamine:</string>
+              <string>Thiamine (mg):</string>
              </property>
             </widget>
            </item>
@@ -3083,7 +3083,7 @@
            <item row="8" column="0">
             <widget class="QLabel" name="vitaminATargetLabel">
              <property name="text">
-              <string>Vitamin A:</string>
+              <string>Vitamin A (RE):</string>
              </property>
             </widget>
            </item>
@@ -3100,7 +3100,7 @@
            <item row="9" column="0">
             <widget class="QLabel" name="vitaminB6TargetLabel">
              <property name="text">
-              <string>Vitamin B6:</string>
+              <string>Vitamin B6 (mg):</string>
              </property>
             </widget>
            </item>
@@ -3117,7 +3117,7 @@
            <item row="10" column="0">
             <widget class="QLabel" name="vitaminB12TargetLabel">
              <property name="text">
-              <string>Vitamin B12:</string>
+              <string>Vitamin B12 (ug):</string>
              </property>
             </widget>
            </item>
@@ -3134,7 +3134,7 @@
            <item row="11" column="0">
             <widget class="QLabel" name="vitaminCTargetLabel">
              <property name="text">
-              <string>Vitamin C:</string>
+              <string>Vitamin C (mg):</string>
              </property>
             </widget>
            </item>
@@ -3151,7 +3151,7 @@
            <item row="12" column="0">
             <widget class="QLabel" name="vitaminDTargetLabel">
              <property name="text">
-              <string>Vitamin D:</string>
+              <string>Vitamin D (ug):</string>
              </property>
             </widget>
            </item>
@@ -3168,7 +3168,7 @@
            <item row="13" column="0">
             <widget class="QLabel" name="vitaminETargetLabel">
              <property name="text">
-              <string>Vitamin E:</string>
+              <string>Vitamin E (mg):</string>
              </property>
             </widget>
            </item>
@@ -3185,7 +3185,7 @@
            <item row="14" column="0">
             <widget class="QLabel" name="zincTargetLabel">
              <property name="text">
-              <string>Zinc:</string>
+              <string>Zinc (mg):</string>
              </property>
             </widget>
            </item>

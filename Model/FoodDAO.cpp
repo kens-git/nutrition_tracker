@@ -201,7 +201,7 @@ Food FoodDAO::getFood(const QString &name) const {
 
     food.setName(query.value("name").toString());
     food.setCategory(query.value("category").toString());
-    food.setServingSize(0);
+    food.setServingSize(query.value("serving_size").toFloat());
     food.setServingMeasurement(query.value("unit_of_measure").toString());
     food.setFat(query.value("fat").toFloat());
     food.setSaturatedFat(query.value("saturated_fat").toFloat());
@@ -244,9 +244,11 @@ Food FoodDAO::getFood(const QString &name) const {
 Food FoodDAO::getFood(const QString& name, float servingSize) const {
     Food food = getFood(name);
 
-    if (servingSize < food.getServingSize()) {
-        servingSize = food.getServingSize() / servingSize;
-    }
+    //if (servingSize < food.getServingSize()) {
+        servingSize = servingSize / food.getServingSize();
+    //} else  {
+        //servingSize = food.getServingSize() / servingSize;
+    //}
 
     food.setFat(food.getFat() * servingSize);
     food.setSaturatedFat(food.getSaturatedFat() * servingSize);

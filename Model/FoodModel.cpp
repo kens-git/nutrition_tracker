@@ -8,8 +8,15 @@ FoodModel::FoodModel() : mDatabase(DatabaseManager::instance()) {
     setStringList(*mFoodList);
 }
 
-void FoodModel::addFood(Food &food) {
-    mDatabase.mFoodDAO.addFood(food);
+bool FoodModel::addFood(Food &food) {
+    // reject duplicate food names
+    if (mDatabase.mFoodDAO.getFood(food.getName()).getName() == "") {
+        mDatabase.mFoodDAO.addFood(food);
+        return true;
+    } else {
+        return false;
+    }
+
 }
 
 void FoodModel::getFoods(const QString &category) {
